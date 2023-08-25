@@ -1,0 +1,8 @@
+Saya menggunakan BM25 dengan k1 = 1.2 dan b = 0.75 sebagai baseline. 
+Untuk LETOR saya menggunakan gensim LSI dan LightGBM sebagai LambdaRANK. 
+Terdapat beberapa variabel yang diubah sebagai komparasi. 
+Variabel tersebut adalah num latent topics, n estimators, num leaves, dan learning rate.
+Hasil percobaan dapat dilihat pada experiment.csv. Dari percobaan tersebut dapat dilihat bahwa LETOR tidak selalu menghasilkan skor yang lebih baik.
+Hanya terdapat 9 konfigurasi LSI dan LambdaRANK yang memiliki skor yang lebih baik dibandingkan baseline. 
+Sehingga dapat disimpulkan bahwa dibutuhkan hyperparameter tuning pada LETOR agar dapat menghasilkan akurasi yang lebih baik.
+Hal lain yang berpengaruh adalah kurangnya data training untuk LambdaRANK. 
